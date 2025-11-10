@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guías & Trucos – Albion Economías</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html"><span class="dot"></span><h1>Albion Economías</h1></a>
+    <nav class="menu">
+      <a href="index.html">Inicio</a><a href="mercado.html">Mercado</a>
+      <a href="recoleccion.html">Recolección</a><a href="fabricacion.html">Fabricación</a>
+      <a href="transporte.html">Transporte</a><a href="territorios.html">Territorios</a>
+      <a href="guias.html">Guías & Trucos</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="grid">
+    <section class="card" style="grid-column: span 12;">
+      <h3>Buscador</h3>
+      <input id="search" type="search" placeholder="Busca 'pociones', 'arbitraje', 'focus', ...">
+    </section>
+
+    <article class="card" style="grid-column: span 6;" data-filter="arbitraje mercado ciudades precio tasa margen">
+      <h3>Arbitraje entre ciudades</h3>
+      <ol>
+        <li>Elige 3 ítems de alto volumen (pociones, comida, capas).</li>
+        <li>Anota precio en 2–3 ciudades y tasa.</li>
+        <li>Calcula margen tras tasas + transporte.</li>
+        <li>Usa <b>órdenes</b> en vez de comprar instantáneo.</li>
+      </ol>
+      <button class="btn" onclick="copyText('Checklist Arbitraje: 1) Ítems volumen 2) Precios y tasas 3) Margen real 4) Órdenes 5) Rutas seguras')">Copiar checklist</button>
+    </article>
+
+    <article class="card" style="grid-column: span 6;" data-filter="focus refinado fabricacion retorno">
+      <h3>Focus rentable</h3>
+      <ul>
+        <li>Si tu ciudad bonifica refinado, usa focus ahí.</li>
+        <li>Si fabricas ítems con alto retorno, priorízalos.</li>
+        <li>Registra <b>plata por foco</b> para decidir cada día.</li>
+      </ul>
+      <button class="btn ghost" onclick="copyText('Regla Focus: usar donde el retorno por foco sea mayor (bono de ciudad + especialización)')">Copiar regla</button>
+    </article>
+
+    <article class="card" style="grid-column: span 6;" data-filter="recoleccion rutas comida invisibilidad">
+      <h3>Ruta segura de recolección</h3>
+      <p>Evita choke points, cambia horario, usa banco intermedio y no llenes al 100%.</p>
+      <div class="danger small">Si ves varios rojos coordinados, cambia de mapa ya.</div>
+    </article>
+
+    <article class="card" style="grid-column: span 6;" data-filter="transporte builds montura invisibilidad bancos">
+      <h3>Transporte con mínimo riesgo</h3>
+      <ul>
+        <li>Divide cargas en 2 viajes.</li>
+        <li>Poción de invisibilidad + botas de sprint.</li>
+        <li>2 rutas alternativas por tramo.</li>
+      </ul>
+    </article>
+
+    <article class="card" style="grid-column: span 12;" data-filter="journals diarios laborers trabajadores">
+      <h3>Diarios y trabajadores</h3>
+      <p>Llena diarios al fabricar/recolectar y véndelos o entrégalos a laborers para recuperar recursos: ingreso extra “pasivo”.</p>
+    </article>
+  </div>
+</main>
+
+<footer><div class="container"><div class="grid"><div class="card" style="grid-column: span 12;">
+<p class="small">Fan site no oficial de Albion Online. © 2025</p><p class="small info">Sitio sin imágenes.</p>
+</div></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
