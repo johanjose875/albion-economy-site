@@ -26,3 +26,23 @@ function copyText(text){
     alert('Copiado al portapapeles ✔');
   });
 }
+
+// --- Menú móvil toggle ---
+(function(){
+  const btn = document.getElementById('nav-toggle');
+  const menu = document.getElementById('main-menu');
+  if(!btn || !menu) return;
+
+  btn.addEventListener('click', ()=>{
+    const isOpen = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  // Cerrar el menú al navegar
+  menu.querySelectorAll('a').forEach(a=>{
+    a.addEventListener('click', ()=>{
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+    });
+  });
+})();
